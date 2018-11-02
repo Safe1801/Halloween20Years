@@ -40,10 +40,6 @@ status.pack(side=BOTTOM, fill=X)
 
 
 
-err_photo = PhotoImage(file='images.gif') #skapar en bild
-
-
-
 
 ####### SEARCH FIRSTNAME #######
 
