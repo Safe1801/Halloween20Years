@@ -63,7 +63,7 @@ e2.pack(anchor=W)
 
 
 
-err_photo = PhotoImage(file='images.gif') #skapar en bild
+err_photo = PhotoImage(file='myimage.gif') #skapar en bild
 
 
 
