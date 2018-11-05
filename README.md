@@ -24,7 +24,7 @@ Programmet jag byggt heter "Halloween20years" och är ett inspirerat programm fr
 #### Steg för steg
 
 1. Användaren skriver in sitt förnamn, efternamn och email.
-2. Trycker sedan på "Add to list" och försöker ansluta till databasen
+2. Trycker sedan på "Add to list" knappen python försöker då ansluta till databasen
 3. Om användare missar att fylla i ett fält varnas han med en text "Missing input"
 4. När allt är korrekt ifyllt visas en text i GUI:n "Succesful registration" 
 5. Programmet har även en sökfunktion som endast Entré värden har tillgång till, (Entré window finns, startas i ett annat programm). Där kan Entré värden se ifall gästen står uppskriven eller inte.
