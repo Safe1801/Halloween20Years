@@ -1,7 +1,8 @@
 # Halloween20Years
-Python kurs HT18 klass DevOps Nackademin 
-Student: Sada Fessehazion
-Lärare: Jeff King
+
+* Python kurs HT18 klass DevOps Nackademin 
+* Student: Sada Fessehazion
+* Lärare: Jeff King
 
 ## Hej, Jag heter Sada Fessehazion och det här är mitt projekt arbete.
 
