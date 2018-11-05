@@ -1,9 +1,9 @@
 # Halloween20Years
-## Person
 
+## Person
 * Student: Sada Fessehazion
 * Lärare: Jeff King
-* Kurs: Programmerin i Python
+* Kurs: Programmering i Python
 
 ## Hej, Jag heter Sada Fessehazion och det här är mitt projekt arbete.
 
