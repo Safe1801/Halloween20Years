@@ -1,5 +1,7 @@
 # Halloween20Years
-Python kurs HT18 klass DevOps 
+Python kurs HT18 klass DevOps Nackademin 
+Student: Sada Fessehazion
+Lärare: Jeff King
 
 ## Hej, Jag heter Sada Fessehazion och det här är mitt projekt arbete.
 
@@ -24,4 +26,4 @@ Programmet jag byggt heter "Halloween20years" och är ett inspirerat programm fr
 4. Programmet har även en sökfunktion som endast används av Entré värden har tillgång till, som är en annan GUI
 
 
-#### Av Sada
+
