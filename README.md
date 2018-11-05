@@ -7,6 +7,13 @@ Jag har skapat en GUI,(GRAPHICAL USER INTERFACE) i python 3.7. Jag har använt m
 
 ### Innehåll
 * Objekt orienterat
+* Interaktivit
+* for loops
+* if satser
+* Variabler
+* Databashantering
+* GUI(GRAPHICAL USER INTERFACE)
+
 
 
 
