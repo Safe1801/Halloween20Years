@@ -40,7 +40,7 @@ search_label1 = Label(window, text='firstname ')
 search_label1.pack(anchor=W)
 
 searcher = StringVar() # StringVar() är en funktion som kan hålla en text sträng. Jag tilldelar StringVar() till min variabel searcher
-search_1 = Entry(window, text=searcher) # Här finns min entry. Här kan Entré värden söka efter gäster som finns på listan genom att skriva in förnamn.
+search_1 = Entry(window, text=searcher, show='*') # Här finns min entry. Här kan Entré värden söka efter gäster som finns på listan genom att skriva in förnamn. show='*' gör lösenordet osynliggt
 search_1.pack(anchor=W) # Synliggör min ENTRY
 
 
@@ -70,13 +70,13 @@ def search():
                                              user='root',           # Användarnamn
                                              password='')           # lösenord, tom lösenord
 
-        cursor = connection.cursor()
+        cursor = connection.cursor()        #CURSOR FUNKAR SOM EN PEKARE,
 
-        cursor.execute("SELECT * FROM PERSON2 WHERE firstname='%s'" % data_name_search) # Fetchar alla, som jag söker på. kollar om samma namn finns.
+        cursor.execute("SELECT * FROM PERSON2 WHERE firstname='%s'" % data_name_search) # SELECT * FROM PERSON2 WHERE firstname='%s' är min Query Fetchar alla, som jag söker på. kollar om samma namn finns. Den här Queryn.
 
         rows = cursor.fetchall() #Pekar PÅ FIRSTNAME OCH HÄMTAR HELA RADEN
 
-        infolabel1.delete(1.0, END)     # Text delete:as från min infolabel
+        infolabel1.delete(1.0, END)     # Text delete:as från min infolabel, när nytt namn söks i sök-entry av användare eller Entrevärden (sök knappen finns på rad 117.) Och synliggörs i min GUI.
 
 
         #### if sats
@@ -87,8 +87,19 @@ def search():
         else:                                    # ANNARS, PRINTA UT FINNS PÅ GÄSTLISTAN
             messagebox.showinfo('FINNS PÅ GÄSTLISTAN', 'FINNS PÅ GÄSTLISTAN')
 
+            #framen = Label(width=15, height=15, bg=)
+            ID_MSG = "Be om ID-kort"
+            top = Toplevel(bg='black')
+            top.title('ID')
+            Message(top, text=ID_MSG, padx=50, pady=50, bg='orange', fg='black').pack()
+            IDbtn = Button(top, text="Continue", bg='orange', fg='black', command=top.destroy)
+
+            IDbtn.pack()
+
             infolabel1.insert(END, 'VAR SNÄLL OCH TA FRAM ID :))) \n')
-            #   FOR LOOP
+
+            ####  FOR LOOP #######
+
             for i in rows:
                 infolabel1.insert(END, i[1] + ' ' + i[2] + ' FINNS PÅ LISTAN ' + ' \n')     # printar ut förnamn och efternamn
 
