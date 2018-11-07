@@ -97,7 +97,7 @@ def verify():
             connection.close()
 
             infolabel1.delete(1.0, END)
-            infolabel1.insert(END, 'Succesful registration')
+            infolabel1.insert(END, 'Succesful registration, TA FRAM ID-KORT VID DÖRREN :))))')
             print("Uppgifter som lagrats i databasen Halloween  {} {} {}".format(data_firstname, data_lastname, data_email))
 
     except mysql.connector.Error as error:
